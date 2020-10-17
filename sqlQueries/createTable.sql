@@ -1,0 +1,1 @@
+CREATE TABLE SURVEY (SAT int, ACT int, GPA decimal (4, 2), Black int, White int, Hispanic int, Asian int, Other int, InState int, Domestic int, PrivateSchool int, Accepted int);
