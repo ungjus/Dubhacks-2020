@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>College Hack</title>
+<head>
+   <title>College Hack</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="main.js"></script>
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
@@ -22,11 +23,12 @@
       <div class="main">
          <div class="container">
             <div style="text-align:center">
-               <h2>Submit Your Info</h2>
+            <h2>Submit Your Info</h2>
                <p>Using our predictive models we can assist you in choosing your school</p>
             </div>
             <div>
-               <form action="/action_page.php">
+               <form id="studentForm" onsubmit="getStudentInfo()">
+                  <!-- action="/action_page.php" -->
                   <label for="SAT">SAT Score</label>
                   <input type="text" pattern= "[0-1600]{4}+" id="SAT" name="SAT" placeholder="Input a number">
 
@@ -44,8 +46,7 @@
                      <option value="hispanic">Hispanic</option>
                      <option value="asian">Asian</option>
                      <option value="other">Other</option>
-                  </select>
-
+               </select>
                   <label for="inState">Is this School in-state?</label>
                   <select required id="race" name="race">
                      <option value="">Not Selected</option>
