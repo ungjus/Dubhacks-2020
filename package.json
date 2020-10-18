@@ -5,6 +5,7 @@
   "main": "main.js",
   "dependencies": {
     "mysql": "^2.18.1",
+    "requirejs": "^2.3.6",
     "tedious": "^9.2.1"
   },
   "devDependencies": {},
