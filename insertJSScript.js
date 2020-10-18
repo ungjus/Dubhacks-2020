@@ -1,4 +1,8 @@
-const { Connection, Request } = require("tedious");
+//const { Connection, Request } = require("tedious");
+
+const { Connection, Request } = require(['tedious'], function (tedious) {
+    //foo is now loaded.
+});
 
 const config = {
 	authentication: {
