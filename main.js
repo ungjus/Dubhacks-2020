@@ -20,7 +20,13 @@ function hello() {
    }
    if(predict){
       console.log("setting event");
-      predict.addEventListener("submit", predict);
+      predict.addEventListener("submit", function(){
+         console.log("predicting")
+         //let display = document.getElementById('display');
+         // console.log(display.value);
+         alert("Your chances of getting in is 80%")
+         //display.value= "90%";
+      });
    } else {
       console.log("not setting");
    }
