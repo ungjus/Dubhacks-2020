@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "tedious": "^9.2.1"
   },
   "devDependencies": {},
   "scripts": {
