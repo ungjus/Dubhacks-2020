@@ -4,7 +4,7 @@
    <title>College Hack</title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <script src="main.js"></script>
+
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,20 +23,20 @@
    <div class="main">
       <div class="container">
          <div style="text-align:center">
-         <h2>Submit Your Info</h2>
-            <p>Using our predictive models we can assist you in choosing your school</p>
-         </div>
+            <h2>Submit Your Info</h2>
+               <p>Using our predictive models we can assist you in choosing your school</p>
+            </div>
          <div>
-            <form id="preditForm">
+            <form id="predictForm">
                <!-- action="/action_page.php" -->
                <label for="SAT">SAT Score</label>
-               <input type="text" pattern= "[0-1600]{4}" id="SAT" name="SAT" placeholder="Input a number">
+               <input type="text" id="SAT" name="SAT" placeholder="Input a number">
 
                <label for="ACT">ACT Score</label>
-               <input type="text" pattern= "[0-36]{2}" id="ACT" name="ACT" placeholder="Input a number">
+               <input type="text" id="ACT" name="ACT" placeholder="Input a number">
 
                <label for="GPA">GPA</label>
-               <input type="text" pattern= "[0-4]{1}" id="GPA" name="GPA" placeholder="Input a number">
+               <input type="text" id="GPA" name="GPA" placeholder="Input a number">
 
                <label for="race">Please Choose a Race:</label>
                <select required id="race" name="race" >
@@ -72,10 +72,14 @@
             </form>
          </div>
       </div>
+      <div style="text-align:center">
+      <h2>Your Chances From Getting in:</h2>
+         <input id="display" value="80%" class="display"/>
+      </div>
    </div>
    <div class="footer">
       <p>Copyright © Justin Ung & Caesar Tuguinay</p>
    </div>
-
+   <script src="main.js"></script>
 </body>
 </html>
