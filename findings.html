@@ -21,18 +21,57 @@
    </div>
 
    <div class="main">
-        <h2>Our Findings</h2>
-        <h5>Title description, Dec 7, 2017</h5>
-   <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <br>
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, Sep 2, 2017</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-   </div>
+      <div class="container">
+         <div style="text-align:center">
+         <h2>Submit Your Info</h2>
+            <p>Using our predictive models we can assist you in choosing your school</p>
+         </div>
+         <div>
+            <form id="preditForm">
+               <!-- action="/action_page.php" -->
+               <label for="SAT">SAT Score</label>
+               <input type="text" pattern= "[0-1600]{4}" id="SAT" name="SAT" placeholder="Input a number">
+
+               <label for="ACT">ACT Score</label>
+               <input type="text" pattern= "[0-36]{2}" id="ACT" name="ACT" placeholder="Input a number">
+
+               <label for="GPA">GPA</label>
+               <input type="text" pattern= "[0-4]{1}" id="GPA" name="GPA" placeholder="Input a number">
+
+               <label for="race">Please Choose a Race:</label>
+               <select required id="race" name="race" >
+                  <option value="">Not Selected</option>
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="hispanic">Hispanic</option>
+                  <option value="asian">Asian</option>
+                  <option value="other">Other</option>
+               </select>
+
+               <label for="inState">Is this School in-state?</label>
+               <select required id="inState" name="inState">
+                  <option value="">Not Selected</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+               </select>
+
+               <label for="domestic">Are You in the US? </label>
+               <select required id="domestic" name="domestic">
+                  <option value="">Not Selected</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+               </select>
+
+               <label for="privateSchool">Is this a private school? </label>
+               <select required id="privateSchool" name="privateSchool">
+                  <option value="">Not Selected</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+               </select>
+               <input type="submit" value="Submit">
+            </form>
+         </div>
+      </div>
    </div>
    <div class="footer">
       <p>Copyright © Justin Ung & Caesar Tuguinay</p>
